@@ -4,7 +4,7 @@ endif
 
 
 function! FMLShow()
-    :call ctrlp#init(ctrlp#key#id()) 
+    :call ctrlp#init(ctrlp#key#id())
 endfunction
 
 nnoremap <silent> <Plug>(FollowMyLead) :call FMLShow()<CR>

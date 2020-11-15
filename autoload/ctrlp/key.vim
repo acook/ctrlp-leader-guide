@@ -33,7 +33,7 @@ function! ctrlp#key#FMLGetLeaderMappingsBySource() abort
   while idx < linesLen
     let mapping = lines[idx] 
     if(mapping =~? '\V\^\(\a\| \)\s\+' . s:fml_escaped_leader . '\S')
-      let source = split(lines[idx + 1], 'from ')[1] 
+      let source = split(split(lines[idx + 1], 'from ')[1], ' line')[0]
       let is_vimrc = ctrlp#key#FMLIsVimrc(source)
       if(g:fml_all_sources || is_vimrc)
         let mappings = get(mappings_by_source, source, [])
