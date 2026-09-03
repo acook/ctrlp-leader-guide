@@ -6,7 +6,7 @@ call add(g:ctrlp_ext_vars, {
   \ 'init': 'ctrlp#key#init()',
   \ 'accept': 'ctrlp#key#accept',
   \ 'lname': 'leader-guide',
-  \ 'sname': '',
+  \ 'sname': 'ldr',
   \ 'type': 'line',
   \ 'sort': 0,
   \ 'specinput': 0,
